@@ -1,0 +1,204 @@
+<style>
+.contentConatiner{margin:30px 0 30px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.contentConatiner h1{color:#60ab08;font-size:54px;line-height:60px;font-weight:300;padding:0;margin:40px 0 10px}.contentConatiner .description{font-family:proxima-nova,sans-serif;width:100%;max-width:1260px;font-size:20px;line-height:28px;font-weight:300;color:#666;font-style:normal;margin-bottom:40px}.contentConatiner .shop_btn{display:block;background-color:#60ab08;color:#fff;text-decoration:none;padding:10px 20px;border-radius:5px;-webkit-filter:drop-shadow(5px 5px 3px rgba(0,0,0,0.2));filter:drop-shadow(5px 5px 3px rgba(0,0,0,0.2))}.contentConatiner .chartContainer{width:100%;max-width:1260px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom:30px;border-bottom:1px solid #d2d2d2}.contentConatiner .chartContainer .header{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-end;margin-bottom:10px;background-color:#fff}.contentConatiner .chartContainer .header .l_column{min-width:270px;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.contentConatiner .chartContainer .header .l_column a{display:block;width:100%;padding:0 10px}.contentConatiner .chartContainer .header .l_column a img{width:100%}.contentConatiner .chartContainer .header .r_column{flex:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.contentConatiner .chartContainer .header .r_column a{display:block;width:100%;max-width:174px;padding:0 2px}.contentConatiner .chartContainer .header .r_column a img{width:100%}.contentConatiner .chartContainer .content{width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.contentConatiner .chartContainer .content .section{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}.contentConatiner .chartContainer .content .section .l_column{min-width:270px}.contentConatiner .chartContainer .content .section .r_column{flex:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;color:#fff;background-color:#a8a8a8;font-size:18px;font-weight:200;line-height:35px}.contentConatiner .chartContainer .content .item{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;border-top:1px solid #d2d2d2}.contentConatiner .chartContainer .content .item .l_column{box-sizing:border-box;min-height:65px;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;max-width:271px;min-width:271px;padding:10px 14px;border-right:1px solid #d2d2d2;text-decoration:none}.contentConatiner .chartContainer .content .item .l_column img{width:45px;margin-right:15px}.contentConatiner .chartContainer .content .item .l_column span{font-size:14px;color:#808080;display:block;line-height:15px}.contentConatiner .chartContainer .content .item .l_column span>span{display:inline;font-size:8px;color:#929292}.contentConatiner .chartContainer .content .item ul.r_column{flex:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin:0;padding:0}.contentConatiner .chartContainer .content .item ul.r_column li{border-right:1px solid #d2d2d2;min-height:65px;padding:10px 14px;box-sizing:border-box;display:block;flex:100;list-style:none;display:flex;flex-direction:row;justify-content:center;align-items:center;font-size:18px;font-weight:200}.contentConatiner .chartContainer .content .item ul.r_column li span{display:block;width:16px;height:16px;border-radius:8px}.contentConatiner .chartContainer .content .item ul.r_column li span.none{width:12px;height:4px;border-radius:0}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(1){color:#a8ce00}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(1) span{background-color:#a8ce00}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(1) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(2){color:#73ba36}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(2) span{background-color:#73ba36}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(2) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(3){color:#f6bf62}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(3) span{background-color:#f6bf62}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(3) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(4){color:#ff8857}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(4) span{background-color:#ff8857}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(4) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(5){color:#5bc5f2;background-color:#82d2f5}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(5) span{background-color:#5bc5f2}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(5) span.none{background-color:#80aaba}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(6){color:#33bfcb;background-color:#62ced8}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(6) span{background-color:#33bfcb}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(6) span.none{background-color:#70a8a9}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(7){color:#eb5f80;background-color:#f0849c}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(7) span{background-color:#eb5f80}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(7) span.none{background-color:#c68291}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(8){color:#8258a2;background-color:#9e7fb8}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(8) span{background-color:#8258a2}.contentConatiner .chartContainer .content .item ul.r_column li:nth-child(8) span.none{background-color:#8d7f96}.contentConatiner .chartContainer .content .item~.section{border-top:1px solid #d2d2d2}@media screen and (max-width:768px){.contentConatiner{width:auto;margin:30px 0 30px}.contentConatiner p{display:none !important}.contentConatiner h1{font-size:36px;line-height:44px;font-weight:300;margin-bottom:10px;text-align:left}.contentConatiner .chartContainer .header{overflow:hidden;margin-bottom:3px;flex:0 0 auto}.contentConatiner .chartContainer .header .l_column{min-width:0}.contentConatiner .chartContainer .header .l_column a{display:none}.contentConatiner .chartContainer .header .r_column{justify-content:flex-start;width:100%}.contentConatiner .chartContainer .header .r_column a{display:block;min-width:76px;padding:0 2px;max-width:165px}.contentConatiner .chartContainer .content{overflow:hidden;flex:1 1 auto;border-right:1px solid #d2d2d2;border-left:1px solid #d2d2d2}.contentConatiner .chartContainer .content .section{z-index:1;position:-webkit-sticky;position:sticky;top:0;min-height:25px}.contentConatiner .chartContainer .content .section .l_column{min-width:0}.contentConatiner .chartContainer .content .section .r_column{position:relative;width:100%;font-size:15px;font-weight:bold;line-height:25px}.contentConatiner .chartContainer .content .section+.item{border-top:none}.contentConatiner .chartContainer .content .item{flex-direction:column;justify-content:flex-start;align-items:center;border-top:none;border-bottom:none;min-height:111px}.contentConatiner .chartContainer .content .item .l_column{position:relative;max-width:100%;min-width:0;width:100%;border-left:none;border-right:none;border-bottom:1px solid #d2d2d2;box-sizing:border-box;min-height:65px}.contentConatiner .chartContainer .content .item .l_column img{width:35px;margin-right:10px}.contentConatiner .chartContainer .content .item .l_column br{display:none}.contentConatiner .chartContainer .content .item ul.r_column{width:100%;font-size:15px;line-height:25px;border-left:none;border-right:none;min-height:46px;box-sizing:border-box}.contentConatiner .chartContainer .content .item ul.r_column li{min-width:80px;padding:10px 0;min-height:35px;border-bottom:1px solid #d2d2d2;font-weight:300}.contentConatiner .chartContainer .content .item ul.r_column li span{width:10px;height:10px;border-radius:5px}.contentConatiner .chartContainer .content .item ul.r_column li:last-child{border-right:none}.contentConatiner .chartContainer .content .item~.section{border-top:none}.contentConatiner .chartContainer .content .item:last-child ul.r_column li{border-bottom:none}}
+</style>
+<div class="contentConatiner">
+	<h1>Legends Arcade Platform Accessories</h1>
+	<div class="description" >AtGames develops a growing line of premium accessories that works with the Legends Arcade Platform family of products. The chart below highlights the compatibility of a particular accessory with a specific Legends Arcade Platform product.</div>
+	<div class="chartContainer">
+		<div class="header">
+			<div class="l_column">
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/arcade_family_logo.jpg" alt="Arcade Family"></a>
+			</div>
+			<div class="r_column">
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_alu_old.jpg" alt="ALU OLD"></a>
+				<a href="/arcades/legends-ultimate/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_alu_new.jpg" alt="ALU NEW"></a>
+				<a href="/arcades/legends-gamer-series/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_gamer.jpg" alt="Gamer"></a>
+				<a href="/arcades/legends-gamer-series/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_gamer_pro.jpg" alt="Gamer Pro"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_mini.jpg" alt="Gamer Mini"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_core.jpg" alt="Core"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_connect.jpg" alt="Connect"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_pinball.jpg" alt="Pinball"></a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="section">
+				<div class="l_column"></div>
+				<div class="r_column">Accessories</div>
+			</div>
+			<div class="item">
+				<a class="l_column" href="https://www.atgames.us/collections/accessories/products/legends-bitpixel-led-marquee-reservation-starts-from-aug-14-2020" target="_blank">
+					<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_bitpixel_led.png" alt="BitPixel LED"><span>BitPixel LED Marquee</span></a><ul class="r_column">
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span class="none"></span></li>
+				</ul>
+			</div>
+			<div class="item"><a class="l_column" href="https://www.atgames.us/collections/accessories/products/legends-bitblaster-light-gun-reservation-starts-from-august-14-2020" target="_blank"><img src="https://new-arcades.atgames.net/wp-content/uploads/icon_light_gun.png" alt="Light Gun"><span>BitBlaster Light Gun</span></a><ul class="r_column">
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span class="none"></span></li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="l_column">
+					<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_cabinet_art.png" alt="Cabinet Art">
+					<span>Arcade Cabinet Art</span>
+				</div><ul class="r_column">
+					<li><span class="none"></span></li>
+					<li><span></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="l_column">
+					<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_pinball_kit.png" alt="Pinball Kit">
+					<span>Pinball Kit</span>
+				</div><ul class="r_column">
+					<li><span class="none"></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+					<li><span class="none"></span></li>
+				</ul></div></div></div><div><a class="shop_btn" href="https://www.atgames.us/" target="_blank">Shop Now</a></div></div>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+<script>
+$(function() {
+	//console
+	var print = function(value, isConsole){
+		if(isConsole){
+			if($('.console').html()){
+				$('.console').html(value+'<br>'+$('.console').html());
+			}else{
+				$('.console').html(value);
+			}
+		}else{
+			console.log(value);
+		}		
+	}
+	//header
+	var headerElement = $('.chartContainer .header');
+	var headerFixPoint;
+	var headerScrollStart;
+	//content
+	var contentElement = $('.content');
+	var contentUpFixPoint, contentDownFixPoint;	
+	var contentScrollStart, contentHScrollStart;
+	//window
+	var windowElement = $(window);
+	var windowIsMatchMedia;
+	var windowUpFixPoint, WindowDownFixPoint;
+	var windowScrollStart;
+	var windowScrollFooter = false;
+	var disableWindowScroll = function(){
+		var supportsPassive = false;
+		try {
+			window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+				get: function () { supportsPassive = true; } 
+			}));
+		} catch(e) {}
+		var wheelOpt = supportsPassive ? { passive: false } : false;
+		window.addEventListener('touchmove', function(e) {
+			if(windowIsMatchMedia){
+				e.preventDefault();
+			}
+		}, wheelOpt);
+	}
+	windowElement.resize(function(event) {
+		windowIsMatchMedia = window.matchMedia('(max-width: 768px)').matches;
+		if(!windowIsMatchMedia){
+			// init PC
+			windowUpFixPoint = null;
+			WindowDownFixPoint = null;
+			windowScrollStart = null;
+			contentUpFixPoint = null;
+			contentHFixPoint = null;
+		}else{
+			// init mobile
+			var windowUpFixAd = 3;
+			windowUpFixPoint = Math.round(headerElement.offset().top - windowUpFixAd);
+			var windowDownFixAd = 55;
+			WindowDownFixPoint = Math.round($('.newsletter').offset().top - $(window).height() - windowDownFixAd);
+			var contentHeight = contentElement.outerHeight( true );
+			var contentContentHeight = 0;
+			contentElement.children().each(function() {
+				contentContentHeight += $(this).outerHeight( true );
+			});
+			contentUpFixPoint = ((contentContentHeight - contentHeight) > 0)? Math.round(contentContentHeight - contentHeight) : 0;
+			contentDownFixPoint = 0;
+			var headerWidth = headerElement.outerWidth( true );
+			var headerContentWidth = 0;	
+			$('.chartContainer .header .r_column a').each(function() {
+				headerContentWidth += $(this).outerWidth( true );
+			});
+			headerFixPoint = ((headerContentWidth - headerWidth) > 0)? Math.round(headerContentWidth - headerWidth) : 0;
+		}
+	});
+	var adjustNum = 0;
+	var hammertime = new Hammer(windowElement[0]);
+	hammertime.get('pinch').set({ enable: false });
+	hammertime.get('rotate').set({ enable: false });
+	hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL});
+	hammertime.get('swipe').set({ enable: false});
+	hammertime.on('panstart', function(event) {
+		if(windowIsMatchMedia){
+			adjustNum = 0;
+			windowScrollStart = Math.round(windowElement.scrollTop());
+			contentScrollStart = Math.round(contentElement.scrollTop());
+			contentHScrollStart = Math.round(contentElement.scrollLeft());
+			headerScrollStart = Math.round(headerElement.scrollLeft());
+		}
+	});
+	hammertime.on('panmove', function(event) {
+		var windowScrollTo, contentScrollTo, headerScrollTo, contentHScrollTo;
+		var adScrollDist = -event.deltaY;
+		var adScrollHDist = -event.deltaX;
+		//adjust
+		//scroll
+		if(windowIsMatchMedia){
+			//X
+			headerScrollTo = headerScrollStart + adScrollHDist;
+			contentHScrollTo = contentHScrollStart + adScrollHDist;
+			//console.log(headerScrollTo, headerFixPoint);
+			headerElement.scrollLeft(headerScrollTo);
+			if(headerScrollTo > 0 && headerScrollTo < headerFixPoint){
+				headerElement.scrollLeft(headerScrollTo);
+				contentElement.scrollLeft(contentHScrollTo);
+				$('.section .r_column').css( { left  : contentHScrollTo});
+				$('.item .l_column').css( { left  : contentHScrollTo});
+			}else if(headerScrollTo <= 0){ headerElement.scrollLeft(0); contentElement.scrollLeft(0); $('.section .r_column').css( { left : 0}); $('.item .l_column').css( { left : 0}); }else if(headerScrollTo >= headerFixPoint){
+				headerElement.scrollLeft(headerFixPoint);
+				contentElement.scrollLeft(headerFixPoint);
+				$('.section .r_column').css( { left  : headerFixPoint});
+				$('.item .l_column').css( { left  : headerFixPoint});
+			}
+			//Y
+			windowScrollTo = Math.round(windowScrollStart + adScrollDist);
+			windowElement.scrollTop(windowScrollTo);
+		}
+	});
+	//init
+	var init = function(){
+		disableWindowScroll();
+		window.dispatchEvent(new Event('resize'));
+	};
+	init();
+});
+</script>

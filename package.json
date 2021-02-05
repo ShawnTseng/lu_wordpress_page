@@ -1,0 +1,44 @@
+{
+  "name": "lu_wordpress_page",
+  "description": "Legends Ultimate",
+  "version": "1.0.0",
+  "license": "Copyright(c) AtGames Cloud Holdings Ltd.",
+  "author": "AtGames",
+  "contributors": [
+    {
+      "name": "高祥凱",
+      "email": "steve@fun-la.com"
+    }
+  ],
+  "scripts": {
+    "dev": "grunt",
+    "pack": "cross-env NODE_ENV=production grunt pack",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FunLaSteve/cathaylife_AA.git"
+  },
+  "engines": {
+    "node": "10.15.1"
+  },
+  "private": true,
+  "main": "server.js",
+  "devDependencies": {
+    "assemble-less": "^0.7.0",
+    "cross-env": "^5.2.0",
+    "grunt": "^1.0.4",
+    "grunt-replace": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-express-server": "^0.5.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.2.1",
+    "serve-static": "^1.12.4",
+    "w3-css": "^4.1.0"
+  }
+}

@@ -1,0 +1,588 @@
+<style>
+.contentConatiner{margin:30px 0 30px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.contentConatiner p{display:none !important}.contentConatiner h1{color:#60ab08;font-size:54px;line-height:60px;font-weight:300;margin-bottom:30px}.contentConatiner .chartContainer{width:100%;max-width:1260px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom:30px}.contentConatiner .chartContainer .header{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-end;margin-bottom:30px;background-color:#fff}.contentConatiner .chartContainer .header .l_column{min-width:305px;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.contentConatiner .chartContainer .header .l_column a{display:block;width:100%;padding:0 10px}.contentConatiner .chartContainer .header .l_column a img{width:100%}.contentConatiner .chartContainer .header .r_column{flex:1;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start}.contentConatiner .chartContainer .header .r_column a{display:block;width:100%;max-width:174px;padding:0 2px}.contentConatiner .chartContainer .header .r_column a img{width:100%}.contentConatiner .chartContainer .content{width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.contentConatiner .chartContainer .content .part{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:stretch;margin-bottom:30px}.contentConatiner .chartContainer .content .part:last-child{margin-bottom:0}.contentConatiner .chartContainer .content .part .part_l_column{text-align:center;writing-mode:vertical-rl;text-orientation:sideways;transform:rotate(-180deg);background-color:#fada50;color:#fff;font-size:18px;font-weight:500;line-height:35px;padding:10px 0}.contentConatiner .chartContainer .content .part .part_r_column{flex:1;border-bottom:1px solid #d2d2d2}.contentConatiner .chartContainer .content .part .part_r_column .item{width:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;border-top:1px solid #d2d2d2}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column{box-sizing:border-box;min-height:65px;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;max-width:270px;min-width:270px;padding:10px 14px;border-right:1px solid #d2d2d2}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column img{width:45px;margin-right:15px}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column span{font-size:14px;color:#808080;display:block;line-height:15px}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column span>span{display:inline;font-size:8px;line-height:10px;color:#929292}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column{flex:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin:0;padding:0}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li{border-right:1px solid #d2d2d2;min-height:65px;padding:10px 14px;box-sizing:border-box;display:block;flex:100;list-style:none;display:flex;flex-direction:row;justify-content:center;align-items:center;font-size:18px;font-weight:200}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li span{display:block;width:16px;height:16px;border-radius:8px}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li span.none{width:12px;height:4px;border-radius:0}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(1){color:#73ba36}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(1) span{background-color:#73ba36}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(1) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(2){color:#f6bf62}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(2) span{background-color:#f6bf62}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(2) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(3){color:#ff8857}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(3) span{background-color:#ff8857}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(3) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(4){color:#5bc5f2}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(4) span{background-color:#5bc5f2}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(4) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(5){color:#33bfcb;background-color:#62ced8}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(5) span{background-color:#33bfcb}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(5) span.none{background-color:#70a8a9}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(6){color:#eb5f80}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(6) span{background-color:#eb5f80}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(6) span.none{background-color:#c6c6c6}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(7){color:#8258a2;background-color:#9e7fb8}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(7) span{background-color:#8258a2}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:nth-child(7) span.none{background-color:#8d7f96}@media screen and (max-width:768px){.contentConatiner{width:auto;margin:30px 0 30px}.contentConatiner h1{font-size:36px;line-height:44px;font-weight:300;margin-bottom:15px}.contentConatiner .chartContainer{height:90vh}.contentConatiner .chartContainer .header{flex:0 0 auto;margin-bottom:10px}.contentConatiner .chartContainer .header .l_column{min-width:35px}.contentConatiner .chartContainer .header .l_column a{display:none}.contentConatiner .chartContainer .header .r_column{overflow:hidden;justify-content:flex-start}.contentConatiner .chartContainer .header .r_column a{box-sizing:border-box;display:block;min-width:76px;padding:0 2px;max-width:165px}.contentConatiner .chartContainer .content{overflow:hidden;flex:1}.contentConatiner .chartContainer .content .part{flex:0 0 auto;border-right:1px solid #d2d2d2;margin-bottom:10px}.contentConatiner .chartContainer .content .part:nth-child(1){min-height:910px}.contentConatiner .chartContainer .content .part:nth-child(2){min-height:457px}.contentConatiner .chartContainer .content .part:nth-child(3){min-height:343px}.contentConatiner .chartContainer .content .part:nth-child(4){min-height:343px}.contentConatiner .chartContainer .content .part:nth-child(5){min-height:685px}.contentConatiner .chartContainer .content .part .part_l_column{text-align:right}.contentConatiner .chartContainer .content .part .part_r_column{min-width:280px;border-top:1px solid #d2d2d2;border-bottom:none}.contentConatiner .chartContainer .content .part .part_r_column .item{flex-direction:column;justify-content:flex-start;align-items:flex-start;border-top:none;border-bottom:none;min-height:111px}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column{position:relative;max-width:100%;min-width:0;width:100%;border-left:none;border-right:none;border-bottom:1px solid #d2d2d2;box-sizing:border-box;min-height:65px}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column img{width:35px;margin-right:10px}.contentConatiner .chartContainer .content .part .part_r_column .item .l_column br{display:none}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column{width:100%;font-size:15px;line-height:25px;border-left:none;border-right:none;min-height:46px;box-sizing:border-box;overflow:hidden}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li{box-sizing:border-box;min-width:76px;padding:10px 0;min-height:35px;border-bottom:1px solid #d2d2d2;font-weight:300}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li span{width:10px;height:10px;border-radius:5px;margin:9px 0}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li span.none{margin:12px 0}.contentConatiner .chartContainer .content .part .part_r_column .item ul.r_column li:last-child{border-right:none}.contentConatiner .chartContainer .content .part .part_r_column .item~.section{border-top:none}.contentConatiner .chartContainer .content .part .part_r_column .item:last-child ul.r_column li{border-bottom:none}}
+</style>
+<div class="contentConatiner">
+	<h1>Legends Arcade Family</h1>
+	<div class="chartContainer">
+		<div class="header">
+			<div class="l_column">
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/arcade_family_logo.jpg" alt="Arcade Family"></a>
+			</div>
+			<div class="r_column">
+				<a href="/arcades/legends-ultimate/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_alu.jpg" alt="ALU"></a>
+				<a href="/arcades/legends-gamer-series/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_gamer.jpg" alt="Gamer"></a>
+				<a href="/arcades/legends-gamer-series/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_gamer_pro.jpg" alt="Gamer Pro"></a>
+				<a href="/arcades/legends-gamer-series/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_gamer_mini.jpg" alt="Gamer Mini"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_core.jpg" alt="Core"></a>
+				<a href="/arcades/legends-connect/"><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_connect_new.jpg" alt="Connect"></a>
+				<a><img src="https://new-arcades.atgames.net/wp-content/uploads/pic_pinball.jpg" alt="Pinball"></a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="part">
+				<div class="part_l_column">Open and Connected</div>
+				<div class="part_r_column">
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_games_Included.png" alt="Games Included">
+							<span>Licensed Games Included</span>
+						</div>
+						<ul class="r_column">
+							<li>300</li>
+							<li>150</li>
+							<li>150</li>
+							<li>100</li>
+							<li>100</li>
+							<li>20</li>
+							<li>22</li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_online.png" alt="Online">
+							<span>Online Connectivity</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_wi_fi.png" alt="Wi-Fi">
+							<span>High Performance <br>Wi-Fi <span>(dual-band)</span></span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_ethernet.png" alt="Ethernet">
+							<span>Ethernet</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_bluetooth.png" alt="Bluetooth">
+							<span>Bluetooth Support</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_apl.png" alt="apl">
+							<span>Arcade Play Link <br><span>(APL)</span></span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_accessories.png" alt="Accessories">
+							<span>Accessories <br><span>(Bluetooth, USB connectivity, ability to add Gamepads)</span></span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_customized_game_options.png" alt="Customized Game Option">
+							<span>Customized Game Options</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="part">
+				<div class="part_l_column">ArcadeNet®</div>
+				<div class="part_r_column">
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_instant_play.png" alt="Arcade Quality">
+							<span>Instant Play <br><span>(without download)</span></span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_library.png" alt="Library">
+							<span>Growing Licensed Game Library</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_subscription.png" alt="Subscription">
+							<span>Subscription and Purchase	Options</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_leaderboards.png" alt="Leaderboards">
+							<span>Leaderboards <br><span>(high scores, competitions)</span></span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="part">
+				<div class="part_l_column">BYOG™</div>
+				<div class="part_r_column">
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_optimized.png" alt="Optimized">
+							<span>Free Local Streaming</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_optimized.png" alt="Optimized">
+							<span>Optimized Streaming </span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_usb_drive.png" alt="USB Drive">
+							<span>USB Drive	Games Support</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="part">
+				<div class="part_l_column">A.L.L.</div>
+				<div class="part_r_column">
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_global.png" alt="Global">
+							<span>Global Leaderboards</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_weekly.png" alt="Weekly">
+							<span>Weekly Events</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_esports.png" alt="eSports">
+							<span>eSports Teams</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="part">
+				<div class="part_l_column">Other</div>
+				<div class="part_r_column">
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_secondary_display.png" alt="Secondary Display">
+							<span>Secondary Display</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_arcade_quality.png" alt="Arcade-quality">
+							<span>Arcade-quality Controls <br>Built-in</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_wireless.png" alt="Wireless">
+							<span>Wireless Controls Top</span>
+						</div>
+						<ul class="r_column">
+							<li><span class="none"></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>							
+							<li><span></span></li>
+							<li><span class="none"></span></li>
+							<li><span class="none"></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_live.png" alt="Live">
+							<span>Live Streaming</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_sdk.png" alt="SDK">
+							<span>SDK for Developers</span>
+						</div>
+						<ul class="r_column">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="l_column">
+							<img src="https://new-arcades.atgames.net/wp-content/uploads/icon_customized_game.png" alt="Customized Game">
+							<span>Vertical Display Mode Support</span>
+						</div>
+						<ul class="r_column">
+							<li><span class="none"></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+<script>
+$(function() {});$(function() {
+	//console
+	var print = function(value, isConsole){
+		if(isConsole){
+			if($('.console').html()){
+				$('.console').html(value+'<br>'+$('.console').html());
+			}else{
+				$('.console').html(value);
+			}
+		}else{
+			console.log(value);
+		}		
+	}
+	//header
+    var headerElement = $('.chartContainer .header');
+    var headerScrollElement = $('.chartContainer .header .r_column');
+	var headerFixPoint;
+	var headerScrollStart;
+	//content
+    var contentElement = $('.content');
+    var contentScrollElement = $('.part_r_column .r_column');
+	var contentUpFixPoint, contentDownFixPoint;	
+	var contentScrollStart, contentHScrollStart;
+	//window
+	var windowElement = $(window);
+	var windowIsMatchMedia;
+	var windowUpFixPoint, WindowDownFixPoint;
+	var windowScrollStart;
+	var windowScrollFooter = false;
+	var disableWindowScroll = function(){
+		var supportsPassive = false;
+		try {
+			window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+				get: function () { supportsPassive = true; } 
+			}));
+		} catch(e) {}
+		var wheelOpt = supportsPassive ? { passive: false } : false;
+		window.addEventListener('touchmove', function(e) {
+			if(windowIsMatchMedia){
+				e.preventDefault();
+			}
+		}, wheelOpt);
+	}
+	windowElement.resize(function(event) {
+		windowIsMatchMedia = window.matchMedia('(max-width: 768px)').matches;
+		if(!windowIsMatchMedia){
+			// init PC
+			windowUpFixPoint = null;
+			WindowDownFixPoint = null;
+			windowScrollStart = null;
+			contentUpFixPoint = null;
+			contentHFixPoint = null;
+		}else{
+			// init mobile
+			var windowUpFixAd = 3;
+			windowUpFixPoint = Math.round(headerElement.offset().top - windowUpFixAd);
+			var windowDownFixAd = 55;
+			WindowDownFixPoint = Math.round($('.newsletter').offset().top - $(window).height() - windowDownFixAd);
+			var contentHeight = contentElement.outerHeight( true );
+			var contentContentHeight = 0;
+			contentElement.children().each(function() {
+				contentContentHeight += $(this).outerHeight( true );
+			});
+			contentUpFixPoint = ((contentContentHeight - contentHeight) > 0)? Math.round(contentContentHeight - contentHeight) : 0;
+			contentDownFixPoint = 0;
+			var headerWidth = headerScrollElement.outerWidth( true );
+			var headerContentWidth = 0;	
+			$('.chartContainer .header .r_column a').each(function() {
+				headerContentWidth += $(this).outerWidth( true );
+			});            
+			headerFixPoint = ((headerContentWidth - headerWidth) > 0)? Math.round(headerContentWidth - headerWidth) : 0;
+		}
+	});
+	var adjustNum = 0;
+	var hammertime = new Hammer(windowElement[0]);
+	hammertime.get('pinch').set({ enable: false });
+	hammertime.get('rotate').set({ enable: false });
+	hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL});
+	hammertime.get('swipe').set({ enable: false});
+	hammertime.on('panstart', function(event) {
+		if(windowIsMatchMedia){
+			adjustNum = 0;
+			windowScrollStart = Math.round(windowElement.scrollTop());
+			contentScrollStart = Math.round(contentElement.scrollTop());
+			contentHScrollStart = Math.round(contentScrollElement.scrollLeft());
+			headerScrollStart = Math.round(headerScrollElement.scrollLeft());
+		}
+	});
+	hammertime.on('panmove', function(event) {
+		var windowScrollTo, contentScrollTo, headerScrollTo, contentHScrollTo;
+		var adScrollDist = -event.deltaY;
+		var adScrollHDist = -event.deltaX;
+		//adjust
+		//scroll
+		if(windowIsMatchMedia){
+			//X
+			headerScrollTo = headerScrollStart + adScrollHDist;
+			contentHScrollTo = contentHScrollStart + adScrollHDist;
+			//console.log(headerScrollTo, headerFixPoint);
+			headerScrollElement.scrollLeft(headerScrollTo);
+			if(headerScrollTo > 0 && headerScrollTo < headerFixPoint){
+				headerScrollElement.scrollLeft(headerScrollTo);
+				contentScrollElement.scrollLeft(contentHScrollTo);
+			}else if(headerScrollTo <= 0){
+				headerScrollElement.scrollLeft(0);
+				contentScrollElement.scrollLeft(0);
+			}else if(headerScrollTo >= headerFixPoint){
+				headerScrollElement.scrollLeft(headerFixPoint);
+				contentScrollElement.scrollLeft(headerFixPoint);
+			}
+			//Y
+			if(adScrollDist > 0){
+				//scroll UP (+)
+				//window scroll
+				windowScrollTo = Math.round(windowScrollStart + adScrollDist);
+				if(windowScrollTo < windowUpFixPoint){
+					windowElement.scrollTop(windowScrollTo);
+				} else {
+					if(windowScrollFooter){
+						if(contentScrollStart !== contentUpFixPoint){
+							adScrollDist = adScrollDist-(contentUpFixPoint-contentScrollStart);
+						}
+						windowScrollTo = Math.round(windowScrollStart + adScrollDist);
+						windowElement.scrollTop(windowScrollTo);
+					} else {
+						windowElement.scrollTop(windowUpFixPoint);
+						//content scroll
+						if(windowScrollStart !== windowUpFixPoint){
+							adScrollDist = adScrollDist-windowUpFixPoint;
+						}
+						contentScrollTo = Math.round(contentScrollStart + adScrollDist);
+						if(contentScrollTo < contentUpFixPoint){
+							contentElement.scrollTop(contentScrollTo);
+						}else{
+							contentElement.scrollTop(contentUpFixPoint);
+							windowScrollFooter = true;
+						}
+					}
+				}
+			}else if(adScrollDist < 0){
+				// scroll DOWN (-)
+				if(windowScrollFooter){
+					windowScrollTo = Math.round(windowScrollStart + adScrollDist);
+					if(windowScrollTo > WindowDownFixPoint){
+						windowElement.scrollTop(windowScrollTo);
+					} else {
+						windowElement.scrollTop(WindowDownFixPoint);
+						windowScrollFooter = false;
+					}
+				}else{
+					//content scroll
+					if(windowScrollStart !== WindowDownFixPoint){
+						adScrollDist = adScrollDist-(WindowDownFixPoint - windowScrollStart);
+					}
+					contentScrollTo = Math.round(contentScrollStart + adScrollDist);
+					if(contentScrollTo > contentDownFixPoint){
+						contentElement.scrollTop(contentScrollTo);
+					}else{
+						contentElement.scrollTop(contentDownFixPoint);
+						if(contentScrollStart !==  contentDownFixPoint){
+							adScrollDist = adScrollDist + contentScrollStart;
+						}
+						windowScrollTo = Math.round(windowScrollStart + adScrollDist);
+						windowElement.scrollTop(windowScrollTo);
+					}
+				}				
+			}
+		}
+	});
+	//init
+	var init = function(){
+		disableWindowScroll();
+		window.dispatchEvent(new Event('resize'));
+	};
+	init();
+});
+</script>
