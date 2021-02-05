@@ -12,11 +12,13 @@ $(function() {
 		}		
 	}
 	//header
-	var headerElement = $('.chartContainer .header');
+    var headerElement = $('.chartContainer .header');
+    var headerScrollElement = $('.chartContainer .header .r_column');
 	var headerFixPoint;
 	var headerScrollStart;
 	//content
-	var contentElement = $('.content');
+    var contentElement = $('.content');
+    var contentScrollElement = $('.part_r_column .r_column');
 	var contentUpFixPoint, contentDownFixPoint;	
 	var contentScrollStart, contentHScrollStart;
 	//window
@@ -61,7 +63,7 @@ $(function() {
 			});
 			contentUpFixPoint = ((contentContentHeight - contentHeight) > 0)? Math.round(contentContentHeight - contentHeight) : 0;
 			contentDownFixPoint = 0;
-			var headerWidth = headerElement.outerWidth( true );
+			var headerWidth = headerScrollElement.outerWidth( true );
 			var headerContentWidth = 0;	
 			$('.chartContainer .header .r_column a').each(function() {
 				headerContentWidth += $(this).outerWidth( true );
@@ -80,8 +82,8 @@ $(function() {
 			adjustNum = 0;
 			windowScrollStart = Math.round(windowElement.scrollTop());
 			contentScrollStart = Math.round(contentElement.scrollTop());
-			contentHScrollStart = Math.round(contentElement.scrollLeft());
-			headerScrollStart = Math.round(headerElement.scrollLeft());
+			contentHScrollStart = Math.round(contentScrollElement.scrollLeft());
+			headerScrollStart = Math.round(headerScrollElement.scrollLeft());
 		}
 	});
 	hammertime.on('panmove', function(event) {
@@ -95,22 +97,16 @@ $(function() {
 			headerScrollTo = headerScrollStart + adScrollHDist;
 			contentHScrollTo = contentHScrollStart + adScrollHDist;
 			//console.log(headerScrollTo, headerFixPoint);
-			headerElement.scrollLeft(headerScrollTo);
+			headerScrollElement.scrollLeft(headerScrollTo);
 			if(headerScrollTo > 0 && headerScrollTo < headerFixPoint){
-				headerElement.scrollLeft(headerScrollTo);
-				contentElement.scrollLeft(contentHScrollTo);
-				$('.section .r_column').css( { left  : contentHScrollTo});
-				$('.item .l_column').css( { left  : contentHScrollTo});
+				headerScrollElement.scrollLeft(headerScrollTo);
+				contentScrollElement.scrollLeft(contentHScrollTo);
 			}else if(headerScrollTo <= 0){
-				headerElement.scrollLeft(0);
-				contentElement.scrollLeft(0);
-				$('.section .r_column').css( { left  : 0});
-				$('.item .l_column').css( { left  : 0});
+				headerScrollElement.scrollLeft(0);
+				contentScrollElement.scrollLeft(0);
 			}else if(headerScrollTo >= headerFixPoint){
-				headerElement.scrollLeft(headerFixPoint);
-				contentElement.scrollLeft(headerFixPoint);
-				$('.section .r_column').css( { left  : headerFixPoint});
-				$('.item .l_column').css( { left  : headerFixPoint});
+				headerScrollElement.scrollLeft(headerFixPoint);
+				contentScrollElement.scrollLeft(headerFixPoint);
 			}
 			//Y
 			windowScrollTo = Math.round(windowScrollStart + adScrollDist);

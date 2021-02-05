@@ -10,9 +10,7 @@ module.exports = function(grunt) {
             my_target: {
               files: {
                 'dist/js/index_fun.js': ['src/js/index_fun.js'],
-                'dist/js/index_v2_fun.js': ['src/js/index_v2_fun.js'],
                 'dist/js/accessories_fun.js': ['src/js/accessories_fun.js'],
-                'dist/js/accessories_v2_fun.js': ['src/js/accessories_v2_fun.js']
               }
             }
         },
@@ -20,9 +18,7 @@ module.exports = function(grunt) {
             basic_and_extras: {
                 files: {
                     'dist/index.html': ['src/html/include/header.html', 'src/html/index.html', 'src/html/include/footer.html'],
-                    'dist/index_v2.html': ['src/html/include/header.html', 'src/html/index_v2.html', 'src/html/include/footer.html'],
                     'dist/accessories.html': ['src/html/include/header.html', 'src/html/accessories.html', 'src/html/include/footer.html'],
-                    'dist/accessories_v2.html': ['src/html/include/header.html', 'src/html/accessories_v2.html', 'src/html/include/footer.html'],
                     'dist/confirm_email.html': ['src/html/confirm_email.html'],
                 },
             }
@@ -53,9 +49,7 @@ module.exports = function(grunt) {
                 files: [
                     { expand: true, flatten: true, src: [
                         'dist/index.html',
-                        'dist/index_v2.html',
                         'dist/accessories.html',
-                        'dist/accessories_v2.html'
                     ], dest: 'dist/'}
                 ]
             }
@@ -69,9 +63,7 @@ module.exports = function(grunt) {
             styles: {
                 files: {
                     'dist/css/index_style.css': ['src/less/index_style.less'],
-                    'dist/css/index_v2_style.css': ['src/less/index_v2_style.less'],
                     'dist/css/accessories_style.css': ['src/less/accessories_style.less'],
-                    'dist/css/accessories_v2_style.css': ['src/less/accessories_v2_style.less']
                 }
             }
         },
