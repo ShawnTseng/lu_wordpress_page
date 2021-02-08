@@ -203,16 +203,16 @@ body {
                     border-radius: 0;
                   }
                 }
+                // &:nth-child(1) {
+                //   color: @aluOldColor;
+                //   span {
+                //     background-color: @aluOldColor;
+                //     &.none {
+                //       background-color: @noneColor;
+                //     }
+                //   }
+                // }
                 &:nth-child(1) {
-                  color: @aluOldColor;
-                  span {
-                    background-color: @aluOldColor;
-                    &.none {
-                      background-color: @noneColor;
-                    }
-                  }
-                }
-                &:nth-child(2) {
                   color: @aluColor;
                   span {
                     background-color: @aluColor;
@@ -221,7 +221,7 @@ body {
                     }
                   }
                 }
-                &:nth-child(3) {
+                &:nth-child(2) {
                   color: @gameProColor;
                   span {
                     background-color: @gameProColor;
@@ -230,7 +230,7 @@ body {
                     }
                   }
                 }
-                &:nth-child(4) {
+                &:nth-child(3) {
                   color: @miniColor;
                   span {
                     background-color: @miniColor;
@@ -239,7 +239,7 @@ body {
                     }
                   }
                 }
-                &:nth-child(5) {
+                &:nth-child(4) {
                   color: @coreColor;
                   span {
                     background-color: @coreColor;
@@ -248,7 +248,7 @@ body {
                     }
                   }
                 }
-                &:nth-child(6) {
+                &:nth-child(5) {
                   color: @connectColor;
                   span {
                     background-color: @connectColor;
@@ -257,10 +257,19 @@ body {
                     }
                   }
                 }
-                &:nth-child(7) {
+                &:nth-child(6) {
                   color: @pinballColor;
                   span {
                     background-color: @pinballColor;
+                    &.none {
+                      background-color: @noneColor;
+                    }
+                  }
+                }
+                &:nth-child(7) {
+                  color: @aluminiColor;
+                  span {
+                    background-color: @aluminiColor;
                     &.none {
                       background-color: @noneColor;
                     }
